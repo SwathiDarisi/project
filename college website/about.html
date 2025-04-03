@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - PSCMR College</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    
+.main-content {
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.side-nav {
+  width: 25%;
+  background-color: #f8f9fa;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-nav li {
+  margin: 10px 0;
+}
+
+.side-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.side-nav a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.content-section {
+  width: 75%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.content-section h2, .content-section h3 {
+  color: #333;
+}
+
+.content-section p, .content-section ul {
+  color: #555;
+}
+
+.content-section ul {
+  padding-left: 20px;
+}
+
+.content-section ul li {
+  margin-bottom: 10px;
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .side-nav {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .content-section {
+    width: 100%;
+    padding: 15px;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-image-container">
+      <img src="images/header-image.jpg" alt="College Header" class="header-image">
+    </div>
+    <nav class="main-nav">
+      <ul class="nav-menu">
+        <li><a href="homepage.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link active">About</a></li>
+        <li><a href="academics.html" class="nav-link">Academics</a></li>
+        <li><a href="#programs" class="nav-link">Programs</a></li>
+        <li><a href="#campus" class="nav-link">Campus</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Main Section -->
+  <main class="main-content">
+    <aside class="side-nav">
+      <ul>
+        <li><a href="#about" onclick="showSection('about')">About the College</a></li>
+        <li><a href="#vision-mission" onclick="showSection('vision-mission')">Vision & Mission</a></li>
+        <li><a href="#administration" onclick="showSection('administration')">Administration</a></li>
+        <li><a href="#placements" onclick="showSection('placements')">Placements</a></li>
+      </ul>
+    </aside>
+    <section id="about" class="content-section">
+      <h2>About PSCMRCET</h2>
+      <p>PSCMRCET is a premier institution dedicated to providing high-quality education, fostering innovation, and nurturing talent. Our college offers a diverse range of undergraduate and postgraduate programs across various disciplines, ensuring that students receive a well-rounded and industry-relevant education.</p>
+      <p><strong>Why Choose Us?</strong></p>
+      <ul>
+        <li>Experienced Faculty: Learn from highly qualified and dedicated educators.</li>
+        <li>Modern Infrastructure: State-of-the-art classrooms, well-equipped labs, and a vast library.</li>
+        <li>Industry Collaboration: Strong partnerships with leading companies for internships and placements.</li>
+        <li>Holistic Development: A perfect blend of academics, research, and extracurricular activities.</li>
+        <li>Student-Centric Approach: A supportive and inclusive learning environment.</li>
+      </ul>
+      <p>Join PSCMRCET to embark on a journey of knowledge, growth, and success!</p>
+    </section>
+</main>
+  
+  <!-- Footer -->
+  <footer class="footer-container">
+    <div class="footer-text">
+      <h3>SS Institute</h3>
+      <p>We are dedicated to nurturing the next generation of engineering talent through innovation, research, and academic excellence.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul class="footer-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#campus">Campus</a></li>
+        <li><a href="#">Admissions</a></li>
+        <li><a href="#">Alumni</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+        <p> 123 University Avenue, Tech City</p>
+        <p>(123) 456-7890</p>
+        <p>info@ss Institute.edu</p>
+    </div>
+    <div class="text-center">
+      &copy; 2025 SS Institute of Technology. All Rights Reserved.
+    </div>
+  </footer>
+  
+</body>
+</html>
